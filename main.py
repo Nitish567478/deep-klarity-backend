@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware    
 from pydantic import BaseModel
 from typing import Optional
-from . import database, models, scraper, llm_quiz_generator
+import database, models, scraper, llm_quiz_generator
 from sqlalchemy.orm import Session
 from dotenv import load_dotenv
 import os, json
